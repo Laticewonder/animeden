@@ -2,9 +2,8 @@ import Image from "next/image";
 
 const Feature = () => {
     return (
-        <div className="feature absolute top-20 left-0 right-0 lg:top-5 lg:left-28 md:w-11/12 lg:w-2/3 h-[188px] bg-slate-600 md:rounded-md truncate cursor-pointer flex mx-auto lg:ml-0 ">
+        <div className="feature relative min-h-fit w-screen top-14 lg:top-8 lg:left-24 lg:w-2/3  bg-slate-600 md:rounded-md truncate cursor-pointer flex ">
             <Image src='https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-FlochcFsyoF4.png' height={188} width={140} />
-            <h1 className="text-white">feature</h1>
         </div>
     );
 }
