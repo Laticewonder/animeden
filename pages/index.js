@@ -4,28 +4,29 @@ import Header from "../components/Header";
 import Results from "../components/Results";
 import requests from "../components/requests";
 
-const Home = (props) => {
-  console.log(props)
+const Home = ({request}) => {
   return ( 
     <div className="container" >
     <Header/>
     <Feature/>
     <Category/>
-    <Results/>
+    <Results result={request}/>
     </div>  
   );
 
 }
 
-export async function serverSideProps(){
+export async function getServerSideProps(context){
   const category = context.query.q
 
   const request= await fetch(`https://gogoanime.herokuapp.com${requests[category]?.url ||
    requests.top.url}`)
- 
    
+
   return{
-    props:data   
+    props:{
+      request: await request.json()
+    }  
   }
 }
 

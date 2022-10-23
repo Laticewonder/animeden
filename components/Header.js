@@ -10,7 +10,7 @@ const Header = () => {
             </svg>
         </header>
 
-        <nav className="bg-slate-900 lg:w-20 h-14 lg:h-screen items-center lg:px-4 lg:border-r-2 border-blue-300/20 flex lg:flex-col justify-between absolute bottom-0 right-0 left-0 py-4 align-middle border-t-2 lg:border-t-0" >
+        <nav className="bg-neutral-900 lg:w-20 h-14 lg:h-screen items-center lg:px-4 lg:border-r-2 border-blue-300/20 flex lg:flex-col justify-between fixed bottom-0 right-0 left-0 py-4 align-middle border-t-2 lg:border-t-0 z-10" >
             <h1 className="text-white font-bold text-4xl pt-4 cursor-pointer hidden lg:block">A<span className='text-blue-400'>L</span></h1>
 
             <div className="interact flex lg:block lg:text-center items-center flex-auto lg:flex-none justify-between px-8 md:px-24 lg:px-0">

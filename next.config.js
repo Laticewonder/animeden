@@ -5,7 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   images: {
-    domains: ["s4.anilist.co"]
+    domains: ["s4.anilist.co", "gogocdn.net"]
   },
   theme: {
     extend: {
